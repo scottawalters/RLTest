@@ -56,3 +56,7 @@ Requires the height/number of stories as an input parameter.  For a height of 3,
 ```
 3
 ```
+
+## Output showing all three programs running
+
+![](output.PNG)
