@@ -15,13 +15,11 @@ public class FormatFileContents {
 
 	public static void main(String[] args) {
 		
+		// Validate command line parameters and read into vars
 		if (args.length < 2) {
 			System.out.println("Must specify command line arguments for <input file> <line width>.");
 			System.exit(3);
 		}
-		
-		String fileName = args[0];
-		Path filePath = Path.of(fileName);
 		
 		int maxChars = 0;
 		try {
@@ -36,21 +34,27 @@ public class FormatFileContents {
 			System.exit(2);
 		}
 		
+		// Read file contents into variable and ensure file exists
 		String contents = "";
+		String fileName = args[0];
 		
 		try {
+			Path filePath = Path.of(fileName);
 			contents = Files.readString(filePath);
 		} catch (IOException e) {
-			System.out.println("No file named " + fileName + " exists.");
+			System.out.println("No file named " + fileName + " exists, or could not be read.");
 			System.exit(1);		
 		}
 		
+		// Strip out newline and carriage return characters
 		contents = contents.replaceAll("\\r\\n|\\r|\\n", " ");
 		
+		// Read file contents, maxChars at a time
 		while (contents.length() > 0) {
 			
 			String chunk = "";
 			
+			// Capture maxChars of the file text as chunk, or the remaining text from the file if less than maxChars remains
 			if (contents.length() > maxChars) {
 				chunk = contents.substring(0, maxChars);
 				contents = contents.substring(maxChars);
@@ -59,17 +63,17 @@ public class FormatFileContents {
 				contents = "";
 			}
 			
+			// Check last 2 digits of chunk to be sure a new word does not start at end of line
 			if (chunk.charAt(chunk.length() - 2) == ' ' && Character.isLetter(chunk.charAt(chunk.length() - 1))) {
 				contents = chunk.charAt(chunk.length() - 1) + contents;
 				chunk = chunk.substring(0, maxChars - 1) + " ";
-				System.out.println(chunk);
-			} else if (Character.isLetter(chunk.charAt(chunk.length() - 1))) {
+			} else if (Character.isLetter(chunk.charAt(chunk.length() - 1))) { // Add hyphen in word needs to wrap
 				contents = chunk.charAt(chunk.length() - 1) + contents;
 				chunk = chunk.substring(0, chunk.length() - 1) + "-";
-				System.out.println(chunk);
-			} else {
-				System.out.println(chunk);
 			}
+			
+			// Output the line of text to the screen
+			System.out.println(chunk);
 			
 		}
 		
