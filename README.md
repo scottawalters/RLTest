@@ -1,4 +1,5 @@
 # RLCodingTest
+Link for documentation: [Documentation](doc/index.html)
 
 ## Problem 1
 Provided test case hardcoded into main method in order to verify data.  Output as follows:
@@ -39,11 +40,11 @@ what I lo-
 ve to do.
 ```
 
-The sample output was actually missing the L in the word Solving, so the end of my output looks a little different than the provided sample in the last 4 lines, but is correct based on the provided input text.
+The sample output was actually missing the L in the word Solving, so the end of my output looks a little different than the provided sample in the last 4 lines, but is correct based on the provided input text.  Altering the sample input file to remove the L, my output also matches the provided sample output.
 
 ## Problem 3
 
-Requires the height/number of stories as an input parameter.  For a height of 3, provides the following output for the possible numbers of configurations.
+Requires the height/number of stories as an input parameter.  For a height of 3, provides the following output for the possible numbers of configurations.  Also tested for a height of 5.  After working on this and having a less elegant [initial solution](blob/898e3f286101ec83166f56ec39a49d172f69f7e7/src/problem3/CalculateArrangements.java), it became obvious this was basically just the Fibonacci sequence.
 
 ```
 3
