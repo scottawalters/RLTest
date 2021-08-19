@@ -1,5 +1,34 @@
 /**
  * Problem 2 for Replacements, Ltd. coding test.
+ * 
+ * Given 2 inputs – 1) filename and 2) max # of characters per line, take the contents of the input
+ * file and format its contents so that there are exactly input2 characters per line. If a word must
+ * be split between two lines, split using a dash. If the first character of a word is the last character
+ * on a line, add a blank space instead and move the entire word to the next new line. It is OK for a
+ * blank space to end a line.
+ * 
+ * Sample Example:
+ * 
+ * Filename: Testfile.txt
+ * Max Characters: 10
+ * 
+ * Testfile.txt contents:
+ * This is a great job. I love programming and the challenges it
+ * brings. Solving problems is what I love to do.
+ * 
+ * Output:
+ * This is a
+ * great job.
+ * I love
+ * programmi-
+ * ng and th-
+ * e challen-
+ * ges it br-
+ * ings. So-
+ * ving prob-
+ * lems is w-
+ * hat I lov-
+ * e to do.
  */
 package problem2;
 
@@ -8,11 +37,18 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /**
+ * Program to apply word wrap to a given text file.  Takes in command line parameters for a text file to format and a width for the text to be displayed.  
+ * Hyphenates words that wrap from one line to the next. Prevents the first character of a word from ending a line.
  * @author Scott Walters
  *
  */
 public class FormatFileContents {
 
+	/**
+	 * Runs the program. Reads in the text file.  Applies the word wrap.  Prints out results to the screen.
+	 * Requires a command line argument for a text file and an integer width.
+	 * @param args command line arguments.
+	 */
 	public static void main(String[] args) {
 		
 		// Validate command line parameters and read into vars

@@ -1,5 +1,9 @@
 /**
  * Problem 1 for Replacements, Ltd. coding test.
+ * 
+ * Create a Java implementation (classes) to store and retrieve the information on this Invoice
+ * document. You don’t need to create the invoice. The focus should be on a generic Invoice
+ * model that best represents this data. (An image of an Invoice was provided.)
  */
 package problem1;
 

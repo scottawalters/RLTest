@@ -1,14 +1,29 @@
 /**
  * Problem 3 for Replacements, Ltd. coding test.
+ * 
+ * A warehouse is being divided up with shelves. A large shelf takes up two stories of the
+ * warehouse, and a small shelf takes up one story.
+ * 
+ * Write a function that, given the height (# of stories) of the warehouse, calculates the number of
+ * different possible arrangements of shelves.
+ * 
+ * For example, if the warehouse is three stories high it can accommodate three different possible
+ * arrangements of shelves: small-small-small, small-large, and large-small.
  */
 package problem3;
 
 /**
+ * Program to determine the possible combination of small (1 unit tall) and large (2 unit tall) shelves that can make up a warehouse.  Requires a command line parameter specifying
+ * the height of the building.
  * @author Scott Walters
  *
  */
 public class CalculateArrangements {
 	
+	/**
+	 * Starts the program.  Reads in building height, calls recursive function to do calculation, prints result to the screen.
+	 * @param args command line arguments.  Requires an integer value for the height of the building.
+	 */
 	public static void main(String[] args) {
 		
 		// Validate inputs
@@ -38,7 +53,9 @@ public class CalculateArrangements {
 	
 
 	/**
-	 * @param the height
+	 * Recursive function to determine the number of possible combinations or large (2 unit tall) and small (1 unit small) shelves that could be used to populate a building.
+	 * @param the height of the building
+	 * @return the number of possible combinations of shelves that could populate the building
 	 */
 	private static int count(int height) {
 		
