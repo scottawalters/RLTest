@@ -1,24 +1,24 @@
-/**
- * 
- */
 package problem1;
 
 /**
+ * Address object.  Stores a value name, address, city, and state.
  * @author Scott Walters
  *
  */
 class Address {
 
-	@Override
-	public String toString() {
-		return "Address [line1=" + this.getLine1() + ", line2=" + this.getLine2() + ", city=" + this.getCity() + ", state=" + this.getState() + "]";
-	}
-
-	String line1;
-	String line2;
-	String city;
-	String state;
+	private String line1;
+	private String line2;
+	private String city;
+	private String state;
 	
+	/**
+	 * Constructor for an Address object.  
+	 * @param line1 name line
+	 * @param line2 address line
+	 * @param city city
+	 * @param state state
+	 */
 	public Address(String line1, String line2, String city, String state) {
 		this.line1 = line1;
 		this.line2 = line2;
@@ -26,6 +26,7 @@ class Address {
 		this.state = state;
 	}
 
+	// Getters and Setters
 	/**
 	 * @return the line1
 	 */
@@ -55,14 +56,14 @@ class Address {
 	}
 
 	/**
-	 * @param line1 the line1 to set
+	 * @param line1 the name line to set
 	 */
 	public void setLine1(String line1) {
 		this.line1 = line1;
 	}
 
 	/**
-	 * @param line2 the line2 to set
+	 * @param line2 the address line to set
 	 */
 	public void setLine2(String line2) {
 		this.line2 = line2;
@@ -80,5 +81,14 @@ class Address {
 	 */
 	public void setState(String state) {
 		this.state = state;
+	}
+	
+	/**
+	 * Returns a string representation of an Address object.  Used for testing.
+	 * @return string representation of an address
+	 */
+	@Override
+	public String toString() {
+		return "Address [line1=" + this.getLine1() + ", line2=" + this.getLine2() + ", city=" + this.getCity() + ", state=" + this.getState() + "]";
 	}
 }

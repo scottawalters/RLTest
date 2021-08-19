@@ -1,5 +1,5 @@
 /**
- * 
+ * Problem 1 for Replacements, Ltd. coding test.
  */
 package problem1;
 
@@ -7,15 +7,18 @@ import java.util.ArrayList;
 import java.util.GregorianCalendar;
 
 /**
+ * Test driver for Invoice.java.  Constructs an Invoice object with sample data. Then prints stored Invoice data.
  * @author Scott Walters
- *
  */
 public class InvoiceDriver {
 
 	/**
-	 * @param args
+	 * Constructs Address, Company, Client, Item, and Invoice objects with sample data. Then prints stored Invoice data.
+	 * @param args command line arguments (ignored)
 	 */
 	public static void main(String[] args) {
+		
+		// Construct sample objects
 		Address compAddress = new Address("International Widgets", "742 Evergreen Terrace", "Springfield", "MO");
 		Address custAddress = new Address("Foo, Inc.", "23 Main St.", "Thorpleburg", "TX");
 		Client client = new Client(56, custAddress);
@@ -27,7 +30,10 @@ public class InvoiceDriver {
 		items.add(new Item(32, 851, "Spline End (Xtra Large)", .25));
 		items.add(new Item(5, 692, "3\" Red Freen", 12.00));
 		Invoice i = new Invoice(client, company, invoiceNum, date, items);
+		
+		// Print out data stored in Invoice object
 		System.out.println(i);
+		
 	}
 	
 }
