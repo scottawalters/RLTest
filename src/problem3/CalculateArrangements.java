@@ -19,6 +19,12 @@ public class CalculateArrangements {
 		try {
 			
 			int height = Integer.parseInt(args[0]);
+			
+			if (height < 1) {
+				System.out.println("Height must be at least 1.");
+				System.exit(2);
+			}
+			
 			System.out.println(count(height));
 
 		} catch (NumberFormatException e) {
