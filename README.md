@@ -1,5 +1,5 @@
 # RLCodingTest
-Link for documentation: [Documentation](doc/index.html)
+Link for documentation: [Documentation](https://scottawalters.github.io/RLTest/)
 
 ## Problem 1
 Running: To compile on command line.  Inside of problem1 directory, type: javac InvoiceDriver.java Address.java Client.java Company.java Invoice.java Item.java  
