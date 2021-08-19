@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package problem1;
 
 import java.text.SimpleDateFormat;
@@ -11,10 +14,15 @@ import java.util.GregorianCalendar;
  */
 class Invoice {
 	
+	/** client invoiced */
 	private Client client;
+	/** company providing the invoice */
 	private Company company;
+	/** invoice number */
 	private int InvoiceNum;
+	/** date of the invoice */
 	private GregorianCalendar date;
+	/** list of items included on the invoice */
 	private ArrayList<Item> items;
 	
 	/**

@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package problem1;
 
 /**
@@ -7,7 +10,9 @@ package problem1;
  */
 class Client {
 
+	/** customer number for the customer */
 	private int customerNo;
+	/** address for the customer */
 	private Address address;
 	
 	/**

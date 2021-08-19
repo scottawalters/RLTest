@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package problem1;
 
 /**
@@ -7,9 +10,13 @@ package problem1;
  */
 class Item {
 
+	/** quantity of the item included on the invoice */
 	private int quantity;
+	/** ID of the invoice item */
 	private int itemId;
+	/** description of the item */
 	private String description;
+	/** unit price of the invoice item */
 	private double unitPrice;
 	
 	/**

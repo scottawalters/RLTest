@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package problem1;
 
 /**
@@ -7,11 +10,12 @@ package problem1;
  */
 class Company {
 
+	/** address of the company */
 	private Address address;
 	
 	/**
 	 * Constructor for a Company object.
-	 * @param address
+	 * @param address the address of the company
 	 */
 	public Company(Address address) {
 		this.address = address;

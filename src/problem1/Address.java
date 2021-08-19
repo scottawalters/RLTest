@@ -7,9 +7,13 @@ package problem1;
  */
 class Address {
 
+	/** name line for the address */
 	private String line1;
+	/** street line for address */
 	private String line2;
+	/** city of the address */
 	private String city;
+	/** state of the address */
 	private String state;
 	
 	/**
@@ -28,14 +32,14 @@ class Address {
 
 	// Getters and Setters
 	/**
-	 * @return the line1
+	 * @return the name line of the address
 	 */
 	public String getLine1() {
 		return line1;
 	}
 
 	/**
-	 * @return the line2
+	 * @return the street line of the address
 	 */
 	public String getLine2() {
 		return line2;

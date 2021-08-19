@@ -54,7 +54,7 @@ public class CalculateArrangements {
 
 	/**
 	 * Recursive function to determine the number of possible combinations or large (2 unit tall) and small (1 unit small) shelves that could be used to populate a building.
-	 * @param the height of the building
+	 * @param height the height of the building
 	 * @return the number of possible combinations of shelves that could populate the building
 	 */
 	private static int count(int height) {
