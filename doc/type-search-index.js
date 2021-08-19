@@ -1,1 +1,0 @@
-typeSearchIndex = [{"p":"problem1","l":"Address"},{"l":"All Classes","u":"allclasses-index.html"},{"p":"problem3","l":"CalculateArrangements"},{"p":"problem1","l":"Client"},{"p":"problem1","l":"Company"},{"p":"problem2","l":"FormatFileContents"},{"p":"problem1","l":"Invoice"},{"p":"problem1","l":"InvoiceDriver"},{"p":"problem1","l":"Item"}];updateSearchResults();
