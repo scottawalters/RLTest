@@ -57,4 +57,32 @@ class Item {
 	public double getUnitPrice() {
 		return unitPrice;
 	}
+
+	/**
+	 * @param quantity the quantity to set
+	 */
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	/**
+	 * @param itemId the itemId to set
+	 */
+	public void setItemId(int itemId) {
+		this.itemId = itemId;
+	}
+
+	/**
+	 * @param description the description to set
+	 */
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	/**
+	 * @param unitPrice the unitPrice to set
+	 */
+	public void setUnitPrice(double unitPrice) {
+		this.unitPrice = unitPrice;
+	}
 }

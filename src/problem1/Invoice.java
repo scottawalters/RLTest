@@ -82,4 +82,39 @@ class Invoice {
 		return items;
 	}
 
+	/**
+	 * @param client the client to set
+	 */
+	public void setClient(Client client) {
+		this.client = client;
+	}
+
+	/**
+	 * @param company the company to set
+	 */
+	public void setCompany(Company company) {
+		this.company = company;
+	}
+
+	/**
+	 * @param invoiceNum the invoiceNum to set
+	 */
+	public void setInvoiceNum(int invoiceNum) {
+		InvoiceNum = invoiceNum;
+	}
+
+	/**
+	 * @param date the date to set
+	 */
+	public void setDate(GregorianCalendar date) {
+		this.date = date;
+	}
+
+	/**
+	 * @param items the items to set
+	 */
+	public void setItems(ArrayList<Item> items) {
+		this.items = items;
+	}
+
 }

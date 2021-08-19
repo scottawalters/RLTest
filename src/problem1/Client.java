@@ -35,4 +35,18 @@ class Client {
 		return this.address;
 	}
 
+	/**
+	 * @param customerNo the customerNo to set
+	 */
+	public void setCustomerNo(int customerNo) {
+		this.customerNo = customerNo;
+	}
+
+	/**
+	 * @param address the address to set
+	 */
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
 }
