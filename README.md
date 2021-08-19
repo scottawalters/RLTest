@@ -18,7 +18,7 @@ Item [quantity=5, itemId=692, description=3" Red Freen, unitPrice=12.0, getLineS
 getInvoiceSum()=82.0]
 ```
 
-![Sample Invoice]('./invoiceimage.png')
+![Sample Invoice]('./invoiceimage.PNG')
 
 ## Problem 2
 
