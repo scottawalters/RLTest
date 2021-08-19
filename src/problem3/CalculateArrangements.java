@@ -9,8 +9,6 @@ package problem3;
  */
 public class CalculateArrangements {
 	
-	static int sol = 0;
-
 	public static void main(String[] args) {
 		
 		if (args.length < 1) {
@@ -19,9 +17,9 @@ public class CalculateArrangements {
 		}
 		
 		try {
+			
 			int height = Integer.parseInt(args[0]);
-			count(height);
-			System.out.println(sol);
+			System.out.println(count(height));
 
 		} catch (NumberFormatException e) {
 			System.out.println("The height entered must be an integer.");
@@ -31,19 +29,17 @@ public class CalculateArrangements {
 	}
 	
 
-	private static void count(int height) {
+	/**
+	 * @param the height
+	 */
+	private static int count(int height) {
 		
-		if (height <= 0) {
-			return;
-		} else if (height == 1) {
-			sol++;
-			return;
+		if (height == 1) {
+			return 1;
 		} else if (height == 2) {
-			sol = sol + 2;
-			return;
+			return 2;
 		} else {
-			count(height - 1);
-			count(height - 2);
+			return count(height - 1) + count(height - 2);
 		}
 		
 	}
