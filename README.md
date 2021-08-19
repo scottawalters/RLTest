@@ -1,5 +1,5 @@
 # RLCodingTest
-Link for documentation: [Documentation](doc/index.html)
+Link for documentation: [Documentation](https://scottawalters.github.io/RLTest/)
 
 ## Problem 1
 Provided test case hardcoded into main method in order to verify data.  Output as follows:
